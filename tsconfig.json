@@ -1,16 +1,18 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
-    "lib": ["dom", "es2017"],
-    "jsx": "react",
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
+    "target": "esnext",
+    "module": "esnext",
     "strict": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
-  "include": ["src", "global.d.ts"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }
